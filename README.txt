@@ -74,11 +74,17 @@ Sample 'parameter' file created after running the simulation with the command ".
 200.sys
 Sample 'system' file created after running the simulation with the command "./niche 200". Stores all the information requested in "niche.c" related to the hypothetical island population as a whole. The information is displayed in the plots on the right of the display. (File is for the sample simulation presented in Fig. 4a)
 
-200.deme.zip
-Sample 'deme' file (compressed) created after running the simulation with the command "./niche 200". Stores all the information requested in "niche.c" related to each of demes present in each patch. The information is displayed in the landscape plot of the display. (File is for the sample simulation presented in Fig. 4a)
+200.deme
+Sample 'deme' file  created after running the simulation with the command "./niche 200". Stores all the information requested in "niche.c" related to each of demes present in each patch. The information is displayed in the landscape plot of the display. (File is for the sample simulation presented in Fig. 4a)
 
 200.distance
 Sample 'distance' file created after running the simulation with the command "./niche 200". Stores all the information requested in "thread.c" related to the dispersal distances of all the individuals in that breeding cycle. The information is displayed in the plots on the left of the display. (File is for the sample simulation presented in Fig. 4a)
+
+with-control.mov
+The vidoe of the simulation with control applied as pre-emptive control. The same simulation data files are 200.* files above.
+
+no-control.mov
+The vidoe of the simulation with no control applied during the plague.
 
 
 ------
@@ -88,7 +94,7 @@ Once the *.c and *.h files along with the makefile listed above are placed in th
 
 ------
 Running simulations:
-After making the relevant changes in “parameters.h”, and compiling, the simulation can be started with the command “./niche 200” at the command line, where the number “200” refers to the number of breeding cycles. The program will output the breeding cycles (and the year) and the population size as it runs. It will print “* Done” along with other relevant information when finished, and will return to the command line. The typical run time for 200 breeding cycles (initialized with 40 individuals placed in each patch with 64 x 64 = 4096 patches) is < 3 mins (depending on the population size through time).
+After making the relevant changes in “parameters.h”, and compiling, the simulation can be started with the command “./niche 200” at the command line, where the number “200” refers to the number of breeding cycles. The program will output the breeding cycles (and the year) and the population size as it runs. It will print “* Done” along with other relevant information when finished, and will return to the command line. The typical run time for 200 breeding cycles (initialized with 40 individuals placed in each patch with 64 x 64 = 4096 patches) is < 1 mins (depending on the population size through time).
 
 After running the program, there will be new data files that will appear in the same folder. The information written in the data files can be found in “niche.c” and “thread.c” with relevant file names. The visualization program can be started with the command “./view 200”, where the number “200” refers to the number of breeding cycles. 
 
