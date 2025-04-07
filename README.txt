@@ -9,7 +9,7 @@ Aysegul Birand (1,3), Thomas A. A. Prowse (1), Phillip Cassey (1), Paul Q. Thoma
 ------
 This readme.txt file summarizes the code for the spatially explicit individual-based simulations used in Birand et al. (2025):
 
-Birand, A., Prowse, T. A. A., Cassey, P., and P. Q. Thomas (2025) Evaluating the efficacy of a newly developed murine gene drive as a pre-emptive control tool against mouse plagues. 
+Birand, A., Prowse, T. A. A., Cassey, P., and P. Q. Thomas (2025) Evaluating the potential of a new murine gene drive for pre-emptive mouse plague control. 
 
 
 ------
@@ -91,4 +91,5 @@ Running simulations:
 After making the relevant changes in “parameters.h”, and compiling, the simulation can be started with the command “./niche 200” at the command line, where the number “200” refers to the number of breeding cycles. The program will output the breeding cycles (and the year) and the population size as it runs. It will print “* Done” along with other relevant information when finished, and will return to the command line. The typical run time for 200 breeding cycles (initialized with 40 individuals placed in each patch with 64 x 64 = 4096 patches) is < 3 mins (depending on the population size through time).
 
 After running the program, there will be new data files that will appear in the same folder. The information written in the data files can be found in “niche.c” and “thread.c” with relevant file names. The visualization program can be started with the command “./view 200”, where the number “200” refers to the number of breeding cycles. 
+
 
